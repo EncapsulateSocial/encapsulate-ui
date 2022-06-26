@@ -1,0 +1,28 @@
+@import "../abstracts/variables";
+
+.LoginForm {
+    width: 20rem;
+    padding: $large-padding $medium-padding;    
+    display: flex;
+    flex-direction: column;
+    gap: $large-gap;
+    border: 1px solid $light-theme-primary-line-color;
+    border-radius: $small-border-radius;
+
+    &__input-container {
+        display: flex;
+        flex-direction: column;
+        gap: $medium-gap;
+    }
+
+    &__options-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__remember-me > *,
+    &__forgot-password {
+        color: $light-theme-secondary-font-color;
+    }
+}
