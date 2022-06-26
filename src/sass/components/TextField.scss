@@ -1,0 +1,10 @@
+@import "../abstracts/variables";
+
+.TextField {
+    padding: $small-padding;
+    border: 1px solid $light-theme-primary-line-color;
+
+    &:focus {
+        outline: none;
+    }
+}
