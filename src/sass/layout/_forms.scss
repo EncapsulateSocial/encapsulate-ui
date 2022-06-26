@@ -5,9 +5,20 @@
     padding: $large-padding $medium-padding;    
     display: flex;
     flex-direction: column;
-    gap: $large-gap;
     border: 1px solid $light-theme-primary-line-color;
     border-radius: $small-border-radius;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__login-section {
+        padding: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: $medium-gap;
+        border-bottom: 1px solid $light-theme-primary-line-color;
+    }
 
     &__input-container {
         display: flex;
