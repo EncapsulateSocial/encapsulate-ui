@@ -1,4 +1,4 @@
-import './App.css';
+import './sass/base/_typography.scss';
 
 function App() {
   return (
