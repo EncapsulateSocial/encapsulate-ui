@@ -8,6 +8,9 @@ import Register from './views/Register/Register/Register';
 import Login from './views/Login/Login/Login';
 import BlogHome from './views/Blog/BlogHome/BlogHome';
 
+// Testing
+import PostListing from './components/blog/postListing/PostListing';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
@@ -16,6 +19,9 @@ root.render(
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/blog" element={<BlogHome />} />
+
+      {/* Testing */}
+      <Route path="/postListing" element={<PostListing />} />
     </Routes>
   </BrowserRouter>
 );
