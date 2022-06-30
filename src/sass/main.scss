@@ -10,9 +10,14 @@
 @import "./components/TextField.scss";
 
 // Layout
-@import "./layout/forms";
+@import "./layout/forms/login/LoginForm.scss";
 
 // Pages
 @import "./pages/BlogHome.scss";
 
 // Themes
+
+body {
+    display: flex;
+    justify-content: center;
+}

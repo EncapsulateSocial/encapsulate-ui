@@ -1,0 +1,22 @@
+@import "../abstracts/variables";
+
+.SearchBar {
+    width: max-content;
+    padding: $small-padding;
+    border: 1px solid $light-theme-primary-line-color;
+    border-radius: $small-border-radius;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &__input {
+        width: 36ch;
+        border: none;
+        outline: none;
+    }
+
+    &__icon {
+        color: $light-theme-secondary-font-color;
+        cursor: pointer;
+    }
+}

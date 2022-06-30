@@ -1,7 +1,7 @@
 import Tag from "../tag/Tag";
 import "../../../sass/components/postListing/PostListing.scss";
 
-const Post = () => {
+const PostListing = () => {
     return (
         <div className="PostListing">
             <div className="PostListing__header">
@@ -26,4 +26,4 @@ const Post = () => {
     );
 };
 
-export default Post;
+export default PostListing;

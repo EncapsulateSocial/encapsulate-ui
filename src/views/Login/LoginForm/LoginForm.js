@@ -1,4 +1,4 @@
-import '../../../sass/layout/_forms.scss';
+import '../../../sass/layout/forms/login/LoginForm.scss';
 import TextField from '../../../components/forms/TextField/TextField';
 import ButtonField from '../../../components/forms/ButtonField/ButtonField';
 import { Link, useNavigate } from 'react-router-dom';
