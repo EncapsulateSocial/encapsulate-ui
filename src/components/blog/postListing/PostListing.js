@@ -1,3 +1,4 @@
+import Tag from "../tag/Tag";
 import "../../../sass/components/postListing/PostListing.scss";
 
 const Post = () => {
@@ -19,7 +20,7 @@ const Post = () => {
             </p>
 
             <div className="PostListing__tagContainer">
-                Tag
+                <Tag label="Example" />                
             </div>
         </div>
     );
