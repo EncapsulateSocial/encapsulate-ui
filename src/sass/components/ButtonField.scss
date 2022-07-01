@@ -1,0 +1,16 @@
+@import "../abstracts/variables";
+
+.ButtonField {
+    width: 100%;
+    padding: $small-padding;
+    background-color: transparent;
+    color: $primary-accent-color;
+    border: 1px solid $primary-accent-color;
+    border-radius: $small-border-radius;
+    cursor: pointer;
+
+    &--filled {
+        background-color: $primary-accent-color;
+        color: $light-theme-secondary-background-color;
+    }
+}
