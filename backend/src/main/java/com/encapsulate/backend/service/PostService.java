@@ -17,4 +17,16 @@ public class PostService {
     public List<Post> getAllPosts() {
         return postRepository.findAll();
     }
+
+    public void addPost(Post post) {
+        postRepository.save(post);
+    }
+
+    public void updatePost(Post post) {
+        // TODO: implement update post
+    }
+
+    public void deletePost(Post post) {
+        postRepository.delete(post);
+    }
 }
