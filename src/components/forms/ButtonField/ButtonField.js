@@ -2,9 +2,9 @@ import '../../../sass/components/ButtonField.scss';
 
 const ButtonField = ({ 
     label,
-    type,
+    type = "",
     fill = true,
-    handler
+    handler = null
 }) => {
     return (
         <button 

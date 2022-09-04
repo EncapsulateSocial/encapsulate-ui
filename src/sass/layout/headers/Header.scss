@@ -1,0 +1,26 @@
+@import "../../abstracts/variables";
+
+.Header {
+    &__content {
+        width: 100%;
+        height: $header-height;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        font-family: "Libre Baskerville", 'Times New Roman', Times, serif;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    &__search-bar {
+        width: 50%;
+    }
+
+    &__sign-in-button {
+        width: max-content;
+    }
+}
