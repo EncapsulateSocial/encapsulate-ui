@@ -1,7 +1,9 @@
+import RegisterForm from "../RegisterForm/RegisterForm";
+
 const Register = () => {
     return (
-        <div>
-            <h1>Register page</h1>
+        <div className="Register">
+            <RegisterForm />
         </div>
     );
 };
