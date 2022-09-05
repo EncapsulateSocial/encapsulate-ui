@@ -1,7 +1,9 @@
 @import "../../../abstracts/variables";
 
 .LoginForm {
-    width: 20rem;
+    width: $user-auth-form-width;
+    position: absolute;
+    top: calc(2 * $header-height);
     padding: $large-padding $medium-padding;    
     display: flex;
     flex-direction: column;
@@ -29,11 +31,22 @@
     &__options-container {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: right;
     }
 
-    &__remember-me > *,
     &__forgot-password {
         color: $light-theme-secondary-font-color;
+    }
+
+    &__login-button, &__create-account-button {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    &__create-account-section {
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
     }
 }

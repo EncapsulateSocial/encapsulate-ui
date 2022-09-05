@@ -2,9 +2,10 @@
 
 .Login {
     width: 100vw;
-    height: max-content;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: relative;
 }

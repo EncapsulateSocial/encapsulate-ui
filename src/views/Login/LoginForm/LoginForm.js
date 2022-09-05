@@ -30,10 +30,6 @@ const LoginForm = () => {
                     <TextField type="password" label="Password" />
                 </div>
                 <div className="LoginForm__options-container">
-                    <div className="LoginForm__remember-me">
-                        <input type="checkbox" id="remember-me" />
-                        <label htmlFor="remember-me">Remember Me</label>
-                    </div>
                     <Link 
                         className="LoginForm__forgot-password" 
                         to="/forgotPassword"
@@ -41,15 +37,23 @@ const LoginForm = () => {
                         Forgot password?
                     </Link>
                 </div>
-                <ButtonField label="Login" type="text" />
+                <ButtonField 
+                    className="LoginForm__login-button"
+                    label="Login" 
+                    type="text" 
+                    fullWidth={true}
+                />
             </div>
             <div className="LoginForm__create-account-section">
                 <p className="LoginForm__create-account-description">
                     Or, if you don't have an account
                 </p>
                 <ButtonField 
+                    className="LoginForm__create-account-button"
                     label="Create account" 
-                    type="text" fill={false} 
+                    type="text" 
+                    fill={false} 
+                    fullWidth={true}
                     handler={handleCreateAccountClick}
                 />
             </div>

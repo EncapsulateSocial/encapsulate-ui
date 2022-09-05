@@ -22,6 +22,10 @@
         gap: 1.5rem;
     }
 
+    &__landing-call-to-action-button {
+        width: max-content;
+    }
+
     &__latest-posts-section {
         display: flex;
         flex-direction: column;
