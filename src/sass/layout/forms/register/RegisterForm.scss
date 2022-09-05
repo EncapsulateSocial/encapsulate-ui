@@ -1,10 +1,10 @@
 @import "../../../abstracts/variables";
 
-.LoginForm {
+.RegisterForm {
     width: $user-auth-form-width;
     position: absolute;
     top: calc(2 * $header-height);
-    padding: $large-padding $medium-padding;    
+    padding: $large-padding $medium-padding;
     display: flex;
     flex-direction: column;
     border: 1px solid $light-theme-primary-line-color;
@@ -14,7 +14,7 @@
         text-align: center;
     }
 
-    &__login-section {
+    &__register-section {
         padding: 2rem 0;
         display: flex;
         flex-direction: column;
@@ -28,22 +28,12 @@
         gap: $medium-gap;
     }
 
-    &__options-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: right;
-    }
-
-    &__forgot-password {
-        color: $light-theme-secondary-font-color;
-    }
-
-    &__login-button, &__create-account-button {
+    &__sign-up-button, &__sign-in-button {
         margin-top: 1rem;
         width: 100%;
     }
 
-    &__create-account-section {
+    &__sign-in-section {
         padding-top: 1rem;
         display: flex;
         flex-direction: column;

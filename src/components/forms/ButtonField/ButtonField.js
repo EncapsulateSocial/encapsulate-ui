@@ -2,13 +2,17 @@ import '../../../sass/components/ButtonField.scss';
 
 const ButtonField = ({ 
     label,
-    type,
+    type = "",
     fill = true,
-    handler
+    fullWidth = false,
+    handler = null
 }) => {
     return (
         <button 
-            className={`ButtonField ${fill ? "ButtonField--filled" : ""}`}
+            className={`ButtonField 
+                ${fill ? "ButtonField--filled" : ""}
+                ${fullWidth ? "ButtonField--full-width" : ""}
+            `}
             type={type}
             onClick={handler}
         > 

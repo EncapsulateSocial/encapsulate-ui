@@ -1,0 +1,49 @@
+@import "../abstracts/variables";
+
+.Home {
+    max-width: $maximum-width;
+    min-height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: $extra-large-gap;
+
+    &__landing-section {
+        height: 50vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    &__landing-section-details {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    &__landing-call-to-action-button {
+        width: max-content;
+    }
+
+    &__latest-posts-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    &__landing-section-illustration {
+        width: 50%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__posts-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: $medium-gap;
+    }
+}

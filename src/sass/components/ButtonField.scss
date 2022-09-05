@@ -1,8 +1,8 @@
 @import "../abstracts/variables";
 
 .ButtonField {
-    width: 100%;
-    padding: $small-padding;
+    width: max-content;
+    padding: $small-padding $medium-padding;
     background-color: transparent;
     color: $primary-accent-color;
     border: 1px solid $primary-accent-color;
@@ -12,5 +12,9 @@
     &--filled {
         background-color: $primary-accent-color;
         color: $light-theme-secondary-background-color;
+    }
+
+    &--full-width {
+        width: 100%;
     }
 }
