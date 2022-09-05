@@ -13,4 +13,8 @@
         background-color: $primary-accent-color;
         color: $light-theme-secondary-background-color;
     }
+
+    &--full-width {
+        width: 100%;
+    }
 }
