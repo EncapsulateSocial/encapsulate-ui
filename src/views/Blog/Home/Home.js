@@ -8,6 +8,7 @@ import LandingSectionIllustration from "../../../assets/LandingSectionIllustrati
 
 const Home = () => {
     const [newsletterPopup, setNewsletterPopup]= useState(false);
+    let i=0;
     const handleCallToActionButtonClick = (e) => {
         e.preventDefault();
         console.log("Call to action button clicked");
