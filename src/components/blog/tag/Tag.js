@@ -1,3 +1,4 @@
+import React from 'react'; 
 import "../../../sass/components/tag/Tag.scss";
 
 const Tag = ({ label }) => {

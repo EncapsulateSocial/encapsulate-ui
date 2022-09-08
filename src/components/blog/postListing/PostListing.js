@@ -1,3 +1,4 @@
+import React from 'react'; 
 import Tag from "../tag/Tag";
 import "../../../sass/components/postListing/PostListing.scss";
 

@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/tags")   // Specifies the endpoint
 public class TagController {
     private TagService tag;
-    private TagRepository tagRepository;
-
+    private final TagRepository tagRepository;
+    @Autowired
     public void tagController(TagRepository tagRepository) {
         this.tagRepository = tagRepository;
       

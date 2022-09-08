@@ -1,3 +1,4 @@
+import React from 'react'; 
 import '../../../sass/layout/forms/login/LoginForm.scss';
 import TextField from '../../../components/forms/TextField/TextField';
 import ButtonField from '../../../components/forms/ButtonField/ButtonField';

@@ -1,3 +1,5 @@
+import React from 'react'; 
+import {useState, useEffect} from 'react';
 import SearchBar from "../../../components/search/SearchBar";
 import PostListing from "../../../components/blog/postListing/PostListing";
 import Header from "../../../components/headers/Header";
@@ -5,6 +7,7 @@ import ButtonField from "../../../components/forms/ButtonField/ButtonField";
 import LandingSectionIllustration from "../../../assets/LandingSectionIllustration.png";
 
 const Home = () => {
+    const [newsletterPopup, setNewsletterPopup]= useState(false);
     const handleCallToActionButtonClick = (e) => {
         e.preventDefault();
         console.log("Call to action button clicked");

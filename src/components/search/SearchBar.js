@@ -1,3 +1,4 @@
+import React from 'react'; 
 import "../../sass/components/SearchBar.scss";
 import { Search } from "@mui/icons-material";
 
