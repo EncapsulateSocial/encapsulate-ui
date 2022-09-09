@@ -5,18 +5,29 @@ import PostListing from "../../../components/blog/postListing/PostListing";
 import Header from "../../../components/headers/Header";
 import ButtonField from "../../../components/forms/ButtonField/ButtonField";
 import LandingSectionIllustration from "../../../assets/LandingSectionIllustration.png";
+import NewsletterPopup from '../../../components/newsletterPopup/NewsletterPopup';
 
 const Home = () => {
     const [newsletterPopup, setNewsletterPopup]= useState(false);
-    let i=0;
-    const handleCallToActionButtonClick = (e) => {
+    // setTimeout(() => {
+    //     //console.log("Delayed for 1 second.");
+    //     setNewsletterPopup(newsletterPopup+1); 
+    //   }, "5000");
+    // useEffect(()=>{
+    //     myfunc
+    // });
+    function handleCallToActionButtonClick(e) {
         e.preventDefault();
         console.log("Call to action button clicked");
+        setNewsletterPopup(true); 
     }
 
     return (
         <div className="Home">
             <Header />
+            {newsletterPopup
+            ? <NewsletterPopup setText={setNewsletterPopup}/>
+            :null}
             <div className="Home__landing-section">
                 <div className="Home__landing-section-details">
                     <h1 className="Home__heading">Encapsulating Our Software Engineering Stories</h1>
