@@ -1,6 +1,8 @@
 @import "../../abstracts/variables";
 
 .Header {
+    top: 0;
+
     &__content {
         width: 100%;
         height: $header-height;

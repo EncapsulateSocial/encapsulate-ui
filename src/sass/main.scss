@@ -22,6 +22,9 @@
 // Themes
 
 body {
+    height: max-content;
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    position: relative;
 }

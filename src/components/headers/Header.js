@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import ButtonField from "../forms/ButtonField/ButtonField";
 import SearchBar from "../search/SearchBar";
 
-const Header = () => {
+const Header = ({ simplify = false }) => {
     let navigate = useNavigate();
 
     const handleSignUpButtonClick = (e) => {
@@ -24,13 +24,17 @@ const Header = () => {
                 >
                     Encapsulate
                 </h3>
-                <SearchBar className="Header__search-bar" />
-                <ButtonField 
-                    className="Header__sign-in-button" 
-                    label="Sign in" 
-                    fill={false} 
-                    handler={handleSignUpButtonClick}
-                />
+                {!simplify && 
+                    <>
+                        <SearchBar className="Header__search-bar" />
+                        <ButtonField 
+                            className="Header__sign-in-button" 
+                            label="Sign in" 
+                            fill={false} 
+                            handler={handleSignUpButtonClick}
+                        />
+                    </>
+                }
             </div>
         </div>
     );
