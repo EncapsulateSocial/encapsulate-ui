@@ -10,16 +10,19 @@ import Home from './views/Blog/Home/Home';
 
 // Testing
 import PostListing from './components/blog/postListing/PostListing';
+import Error from './views/Error/Error';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
+      <Route path="*" element={<Error />} />
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
 
       {/* Testing */}
+      <Route path="/error" element={<Error />} />
       <Route path="/postListing" element={<PostListing />} />
     </Routes>
   </BrowserRouter>

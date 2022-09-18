@@ -1,11 +1,10 @@
 @import "../abstracts/variables";
 
-.Login {
+.Error {
     max-width: $maximum-width;
-    height: max-content; 
+    height: max-content;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    position: relative;
+    gap: $extra-large-gap;
 }

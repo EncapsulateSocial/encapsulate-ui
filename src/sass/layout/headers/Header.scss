@@ -1,6 +1,7 @@
 @import "../../abstracts/variables";
 
 .Header {
+    width: inherit;
     top: 0;
 
     &__content {
@@ -10,6 +11,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        gap: 5rem;
     }
 
     &__logo {
