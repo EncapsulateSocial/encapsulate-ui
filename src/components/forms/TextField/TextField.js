@@ -1,19 +1,14 @@
-import React from 'react'; 
-import '../../../sass/components/TextField.scss';
+import React from "react";
 
-const TextField = ({ 
-    type,
-    value, 
-    label
-}) => {
-    return (
-        <input 
-            className={`TextField`}
-            type={type}
-            value={value}
-            placeholder={label}
-        />
-    );
+const TextField = ({ type, value, label }) => {
+  return (
+    <input
+      className={`TextField`}
+      type={type}
+      value={value}
+      placeholder={label}
+    />
+  );
 };
 
 export default TextField;
