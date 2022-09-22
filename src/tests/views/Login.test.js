@@ -1,7 +1,7 @@
 import React from "react";
 import { MemoryRouter } from "react-router-dom";
 import { render, screen } from "@testing-library/react";
-import Login from "./Login";
+import Login from "../../views/Login/Login";
 
 // Mock React Router DOM dependency
 jest.mock("react-router-dom", () => {

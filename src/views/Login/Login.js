@@ -1,8 +1,8 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import TextField from "../../../components/forms/TextField/TextField";
-import ButtonField from "../../../components/forms/ButtonField/ButtonField";
-import Header from "../../../components/headers/Header";
+import TextField from "../../components/forms/TextField";
+import ButtonField from "../../components/forms/ButtonField";
+import Header from "../../components/headers/Header";
 
 const Login = () => {
   // For redirecting to another page

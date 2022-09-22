@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import React from "react";
-import TextField from "./TextField";
+import TextField from "../../components/forms/TextField";
 
 describe("TextField", () => {
   it("correctly sets the placeholder", () => {

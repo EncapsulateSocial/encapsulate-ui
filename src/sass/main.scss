@@ -6,18 +6,20 @@
 @import "./base/typography";
 
 // Components
-@import "./components/SearchBar.scss";
 @import "./components/ButtonField.scss";
+@import "./components/PostListing.scss";
+@import "./components/SearchBar.scss";
+@import "./components/Tag.scss";
 @import "./components/TextField.scss";
 
 // Layout
 @import "./layout/headers/Header.scss";
 
 // Pages
+@import "./pages/Error.scss";
 @import "./pages/Home.scss";
 @import "./pages/Login.scss";
 @import "./pages/Register.scss";
-@import "./pages/Error.scss";
 
 // Themes
 
