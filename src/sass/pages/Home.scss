@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     gap: $extra-large-gap;
+    z-index:2; 
 
     &__landing-section {
         height: 50vh;

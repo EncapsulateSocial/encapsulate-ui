@@ -1,7 +1,12 @@
 @import "../abstracts/variables";
-.Header {
-    color:red; 
+.NewsletterPopup {
+    &__content{
+      color:magenta;  
+      position :absolute;
+      z-index:10; 
+    }
   }
+  //z-index in order to overlay things
   
 //   /* The actual popup */
 //   .Header .Header__content {

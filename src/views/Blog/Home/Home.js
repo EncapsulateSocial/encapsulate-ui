@@ -7,6 +7,7 @@ import ButtonField from "../../../components/forms/ButtonField/ButtonField";
 import LandingSectionIllustration from "../../../assets/LandingSectionIllustration.png";
 import NewsletterPopup from '../../../components/newsletterPopup/NewsletterPopup';
 
+
 const Home = () => {
     const [newsletterPopup, setNewsletterPopup]= useState(false);
     // setTimeout(() => {
@@ -19,14 +20,14 @@ const Home = () => {
     function handleCallToActionButtonClick(e) {
         e.preventDefault();
         console.log("Call to action button clicked");
-        setNewsletterPopup(true); 
+        setNewsletterPopup(!newsletterPopup); 
     }
 
     return (
         <div className="Home">
             <Header />
             {newsletterPopup
-            ? <NewsletterPopup setText={setNewsletterPopup}/>
+            ? <NewsletterPopup/>
             :null}
             <div className="Home__landing-section">
                 <div className="Home__landing-section-details">
