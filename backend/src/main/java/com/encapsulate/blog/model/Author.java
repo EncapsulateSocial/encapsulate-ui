@@ -1,4 +1,4 @@
-package com.encapsulate.backend.model;
+package com.encapsulate.blog.model;
 
 import lombok.Data;
 import lombok.NonNull;

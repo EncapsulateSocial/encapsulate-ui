@@ -1,6 +1,6 @@
-package com.encapsulate.backend.repository;
+package com.encapsulate.blog.repository;
 
-import com.encapsulate.backend.model.Post;
+import com.encapsulate.blog.model.Post;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

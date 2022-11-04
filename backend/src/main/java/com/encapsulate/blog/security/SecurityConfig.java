@@ -1,4 +1,4 @@
-package com.encapsulate.backend.security;
+package com.encapsulate.blog.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

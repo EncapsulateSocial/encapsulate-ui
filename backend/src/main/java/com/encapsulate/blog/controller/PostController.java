@@ -1,9 +1,9 @@
-package com.encapsulate.backend.controller;
+package com.encapsulate.blog.controller;
 
 import java.util.List;
 
-import com.encapsulate.backend.model.Post;
-import com.encapsulate.backend.service.PostService;
+import com.encapsulate.blog.model.Post;
+import com.encapsulate.blog.service.PostService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
