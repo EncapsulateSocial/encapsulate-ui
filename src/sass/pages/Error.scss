@@ -1,0 +1,14 @@
+@import "../abstracts/variables";
+.Error {
+  max-width: $maximum-width;
+  min-height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: $extra-large-gap;
+    &__content{  
+      width:100%; 
+      margin-top:40vh;
+      margin-left:1%; 
+      font-family: "Libre Baskerville", 'Times New Roman', Times, serif;
+    }
+  }

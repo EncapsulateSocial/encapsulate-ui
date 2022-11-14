@@ -1,55 +1,62 @@
 @import "../abstracts/variables";
+
 .NewsletterPopup {
+  opacity: 0%;
     &__content{
-      color:magenta;  
-      position :absolute;
-      z-index:10; 
+      position:fixed; 
+      margin-left:10%; 
+      margin-top:10%; 
+      padding-bottom:5%;
+      padding-left:2%;  
+     border-radius: $small-border-radius;
+      //z-index in order to overlay things
+      z-index: 1;
+      width:50%; 
+      background-color: white;
+      display:flex;
+      flex-direction: row;
     }
+    &__text{
+      font-family: "Libre Baskerville", 'Times New Roman', Times, serif;
+      padding-bottom:5%;
+      padding-left:2%; 
+    }
+    &__subscribe{
+      color:black;
+      padding-bottom:1%; 
+      padding-left:2%;
+    }
+    .ButtonField{
+      padding:2%;
+    
+    }
+    .TextField{
+      width:50%;
+      // padding-left:2%; 
+    
+    }
+    &__landing-section-illustration{
+      width: 100%; 
+
+      img {
+        width: 100%;
+        height:100%; 
+      }
+    }
+    &__overlay{
+      opacity:100%; 
+      z-index:2;
+    }
+    &__content{
+      opacity:100%; 
+      z-index:3; 
+    }
+    // &__subscribe-text{
+    //   width:80%; 
+    // }
   }
-  //z-index in order to overlay things
+
   
-//   /* The actual popup */
-//   .Header .Header__content {
-//     visibility: hidden;
-//     width: 160px;
-//     background-color: #555;
-//     color: #fff;
-//     text-align: center;
-//     border-radius: 6px;
-//     padding: 8px 0;
-//     position: absolute;
-//     z-index: 1;
-//     bottom: 125%;
-//     left: 50%;
-//     margin-left: -80px;
-//   }
+
+
   
-//   /* Popup arrow */
-//   .Header .Header__content::after {
-//     content: "";
-//     position: absolute;
-//     top: 100%;
-//     left: 50%;
-//     margin-left: -5px;
-//     border-width: 5px;
-//     border-style: solid;
-//     border-color: #555 transparent transparent transparent;
-//   }
-  
-//   /* Toggle this class - hide and show the popup */
-//   .Header .show {
-//     visibility: visible;
-//     -webkit-animation: fadeIn 1s;
-//     animation: fadeIn 1s;
-//   }
-  
-//   /* Add animation (fade in the popup) */
-//   @-webkit-keyframes fadeIn {
-//     from {opacity: 0;} 
-//     to {opacity: 1;}
-//   }
-  
-//   @keyframes fadeIn {
-//     from {opacity: 0;}
-//     to {opacity:1 ;}
-//   }

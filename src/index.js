@@ -7,6 +7,7 @@ import './sass/main.scss';
 import Register from './views/Register/Register/Register';
 import Login from './views/Login/Login/Login';
 import Home from './views/Blog/Home/Home';
+import Error from './views/Error/Error';
 
 // Testing
 import PostListing from './components/blog/postListing/PostListing';
@@ -17,10 +18,15 @@ root.render(
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />
-      <Route path="/register" element={<Register />} />
+      <Route path="/register" element={<Register/>} />
+      
+      {/* path="*" means that any route that doesn't include the premade routes will re-route you to this error page */}
+      <Route path="*" element={<Error/>} />
 
       {/* Testing */}
       <Route path="/postListing" element={<PostListing />} />
     </Routes>
   </BrowserRouter>
+
 );
+

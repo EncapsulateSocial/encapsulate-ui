@@ -1,6 +1,7 @@
 @import "../../abstracts/variables";
 
-.Header {
+.Header { 
+
     &__content {
         width: 100%;
         height: $header-height;
@@ -8,6 +9,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        position: absolute; 
     }
 
     &__logo {

@@ -15,12 +15,24 @@ const Home = () => {
     //     setNewsletterPopup(newsletterPopup+1); 
     //   }, "5000");
     // useEffect(()=>{
-    //     myfunc
-    // });
+    // },[]);
     function handleCallToActionButtonClick(e) {
         e.preventDefault();
-        console.log("Call to action button clicked");
+        console.log("Call to action button clicked", newsletterPopup);
         setNewsletterPopup(!newsletterPopup); 
+        console.log("Call to action button clicked", newsletterPopup);
+        var color; 
+        color=document.querySelector(".Home");
+        if(newsletterPopup==false){
+            color.style.backgroundColor="grey"; 
+            // document.querySelector('html').style.backgroundColor="grey"; 
+        
+            } 
+        else if(newsletterPopup==true){
+            color.style.backgroundColor='white';
+            document.querySelector('html').style.backgroundColor="white";  
+        }
+        
     }
 
     return (
@@ -29,6 +41,7 @@ const Home = () => {
             {newsletterPopup
             ? <NewsletterPopup/>
             :null}
+            
             <div className="Home__landing-section">
                 <div className="Home__landing-section-details">
                     <h1 className="Home__heading">Encapsulating Our Software Engineering Stories</h1>
