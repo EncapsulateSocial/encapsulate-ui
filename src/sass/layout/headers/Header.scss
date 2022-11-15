@@ -1,15 +1,23 @@
 @import "../../abstracts/variables";
 
 .Header { 
+    width: 100vw;
+    height: $header-height;
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: $light-theme-primary-background-color;
+    border-bottom: 1px solid $light-theme-primary-line-color;
 
     &__content {
-        width: 100%;
-        height: $header-height;
+        width: $maximum-width;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        position: absolute; 
     }
 
     &__logo {

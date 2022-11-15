@@ -1,62 +1,67 @@
 @import "../abstracts/variables";
 
 .NewsletterPopup {
-  opacity: 0%;
-    &__content{
-      position:fixed; 
-      margin-left:10%; 
-      margin-top:10%; 
-      padding-bottom:5%;
-      padding-left:2%;  
-     border-radius: $small-border-radius;
-      //z-index in order to overlay things
-      z-index: 1;
-      width:50%; 
-      background-color: white;
-      display:flex;
-      flex-direction: row;
-    }
-    &__text{
-      font-family: "Libre Baskerville", 'Times New Roman', Times, serif;
-      padding-bottom:5%;
-      padding-left:2%; 
-    }
-    &__subscribe{
-      color:black;
-      padding-bottom:1%; 
-      padding-left:2%;
-    }
-    .ButtonField{
-      padding:2%;
-    
-    }
-    .TextField{
-      width:50%;
-      // padding-left:2%; 
-    
-    }
-    &__landing-section-illustration{
-      width: 100%; 
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
 
-      img {
-        width: 100%;
-        height:100%; 
-      }
-    }
-    &__overlay{
-      opacity:100%; 
-      z-index:2;
-    }
-    &__content{
-      opacity:100%; 
-      z-index:3; 
-    }
-    // &__subscribe-text{
-    //   width:80%; 
-    // }
+  &__overlay {
+    width: 100vw;
+    height: 100%;
+    background: $overlay-color;
+    z-index: 2;
   }
 
-  
+  &__content {
+    width: 50%; 
+    height: max-content;
+    padding: $large-padding;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: $small-border-radius;
+    background-color: $light-theme-primary-background-color;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    z-index: 3;
+  }
 
+  img {
+    width: 45%;
+  }
 
-  
+  &__info-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+  }
+
+  &__close-button {
+    padding: .25rem;
+    align-self: flex-end;
+    border-radius: 50%;
+    color: $light-theme-secondary-font-color;
+    transition: background-color .25s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $light-theme-tag-color;
+    }
+  }
+
+  &__input-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

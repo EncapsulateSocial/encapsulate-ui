@@ -1,12 +1,17 @@
 @import "../abstracts/variables";
 
 .Home {
-    max-width: $maximum-width;
+    width: 100%;
     min-height: max-content;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: $extra-large-gap;
-  
+    // z-index: 1;
+
+    &__content {
+        max-width: $maximum-width;
+    }
 
     &__landing-section {
         height: 50vh;
