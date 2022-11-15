@@ -21,13 +21,15 @@ const Error = () => {
             <Header/>
             <div className="Error__content">
                 <div className="Error__text">
-                    <h1>Oops!</h1> 
-                    <h2>It appears you went to a page that doesn't exist.</h2>
-                    <ButtonField
-                     className="Home__landing-call-to-action-button"
-                     label="Go to Home Page"
-                     fill={false}
+                    <h1 className='Error__content-oops'>Oopse!</h1> 
+                    <h3>It appears you went to a page that doesn't exist.</h3>
+                    <div className='Error__content-call-to-action-button'>
+                        <ButtonField
+                        className="Error__contents-call-to-action-button"
+                        label="Go to Home Page"
+                        fill={false}
                                          />
+                    </div>
                 </div>
             </div>
             
