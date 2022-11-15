@@ -1,10 +1,11 @@
 @import "../abstracts/variables";
 .Error {
-  max-width: $maximum-width;
-  min-height: max-content;
-  display: flex;
-  flex-direction: column;
- //gap: $extra-large-gap;
+  // max-width: min-content;
+  // min-height: max-content;
+  // display: flex;
+  // flex-direction: column;
+  
+
     &__content{  
       //width:100%; 
       height: 50vh;

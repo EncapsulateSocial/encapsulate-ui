@@ -4,6 +4,7 @@ import React from 'react';
 import ButtonField from "../../components/forms/ButtonField/ButtonField";
 
 import Header from "../../components/headers/Header";
+import Footer from "../../components/footers/Footer";
 
 
 const Error = () => {
@@ -21,7 +22,7 @@ const Error = () => {
             <Header/>
             <div className="Error__content">
                 <div className="Error__text">
-                    <h1 className='Error__content-oops'>Oopse!</h1> 
+                    <h1 className='Error__content-oops'>Oops!</h1> 
                     <h3>It appears you went to a page that doesn't exist.</h3>
                     <div className='Error__content-call-to-action-button'>
                         <ButtonField
@@ -32,6 +33,7 @@ const Error = () => {
                     </div>
                 </div>
             </div>
+            <Footer/>
             
            
         </div>
