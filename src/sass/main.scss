@@ -11,20 +11,24 @@
 @import "./components/SearchBar.scss";
 @import "./components/Tag.scss";
 @import "./components/TextField.scss";
+@import "./components/NewsletterPopup.scss";
 
 // Layout
 @import "./layout/headers/Header.scss";
+@import "./layout/footers/Footer.scss";
 
 // Pages
 @import "./pages/Error.scss";
 @import "./pages/Home.scss";
 @import "./pages/Login.scss";
 @import "./pages/Register.scss";
+@import "./pages/Error.scss";
 
 // Themes
 
 body {
-    height: max-content;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;

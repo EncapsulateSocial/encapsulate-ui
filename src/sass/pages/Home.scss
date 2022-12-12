@@ -1,11 +1,17 @@
 @import "../abstracts/variables";
 
 .Home {
-    max-width: $maximum-width;
-    height: max-content;
+    width: 100%;
+    min-height: max-content;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: $extra-large-gap;
+    // z-index: 1;
+
+    &__content {
+        max-width: $maximum-width;
+    }
 
     &__landing-section {
         height: 50vh;
@@ -19,7 +25,7 @@
         width: 50%;
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
+        gap: .5rem;
     }
 
     &__landing-call-to-action-button {
@@ -45,5 +51,8 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: $medium-gap;
+    }
+    &__opacity{
+        opacity: 50% ;
     }
 }
