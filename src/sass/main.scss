@@ -7,16 +7,18 @@
 
 // Components
 @import "./components/ButtonField.scss";
+@import "./components/PostListing.scss";
+@import "./components/SearchBar.scss";
+@import "./components/Tag.scss";
 @import "./components/TextField.scss";
 @import "./components/NewsletterPopup.scss";
 
 // Layout
-@import "./layout/forms/login/LoginForm.scss";
-@import "./layout/forms/register/RegisterForm.scss";
 @import "./layout/headers/Header.scss";
 @import "./layout/footers/Footer.scss";
 
 // Pages
+@import "./pages/Error.scss";
 @import "./pages/Home.scss";
 @import "./pages/Login.scss";
 @import "./pages/Register.scss";
@@ -28,5 +30,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    position: relative;
 }

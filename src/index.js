@@ -18,6 +18,7 @@ root.render(
   <BrowserRouter>
     <Header />
     <Routes>
+      <Route path="*" element={<Error />} />
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
@@ -26,6 +27,7 @@ root.render(
       <Route path="*" element={<Error />} />
 
       {/* Testing */}
+      <Route path="/error" element={<Error />} />
       <Route path="/postListing" element={<PostListing />} />
     </Routes>
   </BrowserRouter>
