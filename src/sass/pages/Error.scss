@@ -1,0 +1,27 @@
+@import "../abstracts/variables";
+.Error {
+  // max-width: min-content;
+  min-width:max-content;
+  min-height: max-content;
+  display: flex;
+  flex-direction: column;
+  
+
+    &__content{  
+      width:100%; 
+      height: 50vh;
+      margin-top:20vh;
+      margin-left:1%; 
+      font-family: "Libre Baskerville", 'Times New Roman', Times, serif;
+    }
+    &__content-call-to-action-button{ 
+       margin-left:30%; 
+       margin-top:4%;  
+    
+    }
+    &__content-oops{
+      margin-left:30%; 
+      margin-bottom:5%; 
+    }
+
+  }

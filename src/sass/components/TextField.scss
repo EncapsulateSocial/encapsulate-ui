@@ -1,9 +1,9 @@
 @import "../abstracts/variables";
 
 .TextField {
-    padding: $medium-padding;
+    width: 100%;
+    padding: $small-padding;
     border: 1px solid $light-theme-primary-line-color;
-    border-radius: $small-border-radius;
 
     &:focus {
         outline: none;

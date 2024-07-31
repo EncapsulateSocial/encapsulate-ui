@@ -1,0 +1,67 @@
+@import "../abstracts/variables";
+
+.NewsletterPopup {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  &__overlay {
+    width: 100vw;
+    height: 100%;
+    background: $overlay-color;
+    z-index: 2;
+  }
+
+  &__content {
+    width: 50%; 
+    height: max-content;
+    padding: $large-padding;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: $small-border-radius;
+    background-color: $light-theme-primary-background-color;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    z-index: 3;
+  }
+
+  img {
+    width: 45%;
+  }
+
+  &__info-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+  }
+
+  &__close-button {
+    padding: .25rem;
+    align-self: flex-end;
+    border-radius: 50%;
+    color: $light-theme-secondary-font-color;
+    transition: background-color .25s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $light-theme-tag-color;
+    }
+  }
+
+  &__input-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

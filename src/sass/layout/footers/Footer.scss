@@ -1,0 +1,10 @@
+@import "../../abstracts/variables";
+
+.Footer{
+    &__content{
+        margin-top:17%; 
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
